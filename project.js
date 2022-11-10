@@ -89,7 +89,7 @@ function updateValues() {
   ).toFixed(2);
 
   balance.innerText = `$${total}`;
-  money_plus.innerText = '$${income}`;
+  money_plus.innerText = `$${income}`;
   money_minus.innerText = `$${expense}`;
 }
 
@@ -116,4 +116,6 @@ function init() {
 }
 
 init();
+
+form.addEventListener('submit', addTransaction);
 
